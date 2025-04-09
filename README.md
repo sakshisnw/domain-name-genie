@@ -5,4 +5,13 @@ A smart brand name + domain + moodboard generator built with Python and Streamli
 ## Features
 - Random tech brand name generator
 - Tagline suggestions
-- Moodboard (coming soon)
+- Moodboard
+
+## Technologies Used
+- Python 3
+- Streamlit
+- Custom helper modules
+- Random library
+
+
+

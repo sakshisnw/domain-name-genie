@@ -10,7 +10,7 @@ if "generated" not in st.session_state:
 # Page config must come BEFORE any UI elements
 st.set_page_config(
     page_title="Domain Name Genie",
-    page_icon="🧞‍♂️",
+    page_icon="assets/favicon.ico",
     layout="centered"
 )
 

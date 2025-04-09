@@ -19,3 +19,6 @@ if st.button("Generate Name and Tagline"):
     tagline = generate_tagline()
     st.subheader(name)
     st.caption(tagline)
+    
+# Moodboard placeholder image
+st.image("assets/sample_moodboard.png", caption="Moodboard (Coming Soon)", use_column_width=True)

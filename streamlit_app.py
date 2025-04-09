@@ -37,7 +37,9 @@ with st.form("gen_form"):
         st.write(", ".join(keywords))
     
 # Moodboard placeholder image
-st.image("assets/sample_moodboard.png", caption="Moodboard", use_column_width=True)
+st.image("assets/sample_moodboard.png", caption="Moodboard (Coming Soon)", use_container_width=True)
+
 
 st.markdown("---")
-st.markdown("#### 🧰 Powered by randomness and creativity - Sakshi")
+st.markdown("© 2025 Domain Name Genie — Built with ❤️ by Sakshi")
+

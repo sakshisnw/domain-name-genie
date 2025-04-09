@@ -39,3 +39,6 @@ with st.form("gen_form"):
     
 # Moodboard placeholder image
 st.image("assets/sample_moodboard.png", caption="Moodboard (Coming Soon)", use_column_width=True)
+
+st.markdown("---")
+st.markdown("#### 🧰 Powered by randomness and creativity - Sakshi")

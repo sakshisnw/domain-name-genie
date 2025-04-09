@@ -30,8 +30,10 @@ with st.form("gen_form"):
         # Update session state
         st.session_state["generated"] = True
 
+        st.markdown("### 🔮 Your Magical Domain Name is Ready!")
         st.subheader(name)
         st.caption(tagline)
+        
         st.markdown("**Moodboard Keywords:**")
         st.write(", ".join(keywords))
     

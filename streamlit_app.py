@@ -3,6 +3,10 @@ from generator.tagline_generator import generate_tagline
 from generator.name_generator import generate_name
 from generator.moodboard import generate_moodboard_keywords
 
+# Initialize session state before any UI elements
+if "generated" not in st.session_state:
+    st.session_state["generated"] = False
+    
 # Page config must come BEFORE any UI elements
 st.set_page_config(
     page_title="Domain Name Genie",
@@ -22,6 +26,9 @@ with st.form("gen_form"):
         name = generate_name()
         tagline = generate_tagline()
         keywords = generate_moodboard_keywords(name)
+        
+        # Update session state
+        st.session_state["generated"] = True
 
         st.subheader(name)
         st.caption(tagline)

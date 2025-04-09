@@ -16,15 +16,17 @@ st.markdown("## Your Brand Identity Starts Here")
 st.markdown("---")
 
 # Use Streamlit Form for cleaner UX
-if st.button("Generate Full Identity"):
-    name = generate_name()
-    tagline = generate_tagline()
-    keywords = generate_moodboard_keywords(name)
-    
-    st.subheader(name)
-    st.caption(tagline)
-    st.markdown("**Moodboard Keywords:**")
-    st.write(", ".join(keywords))
+with st.form("gen_form"):
+    submitted = st.form_submit_button("Generate Brand Package")
+    if submitted:
+        name = generate_name()
+        tagline = generate_tagline()
+        keywords = generate_moodboard_keywords(name)
+
+        st.subheader(name)
+        st.caption(tagline)
+        st.markdown("**Moodboard Keywords:**")
+        st.write(", ".join(keywords))
     
 # Moodboard placeholder image
 st.image("assets/sample_moodboard.png", caption="Moodboard (Coming Soon)", use_column_width=True)

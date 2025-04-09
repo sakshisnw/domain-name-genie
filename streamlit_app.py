@@ -9,6 +9,10 @@ st.set_page_config(
     layout="centered"
 )
 
+# UI starts here
+st.title("Domain Name Genie")
+st.markdown("## Your Brand Identity Starts Here")
+st.markdown("---")
 
 if st.button("Generate Name and Tagline"):
     name = generate_name()
